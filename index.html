@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage - Hazirah</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+  <body bgcolor="#FADADD" style="font-family: 'Segoe UI', Arial, sans-serif;">
+
+    <center>
+        <br>
+        <font face="Trebuchet MS" size="7" color="purple"><b>Welcome To My Personal Website</b></font>
+        <br>
+        <big>================================================================================================================================</big>
+        <br>
+        <font size="4">
+            [ <a href="index.html" style="color:purple;">HOME</a> ]    
+            [ <a href="About me.html" style="color:black;">ABOUT ME</a> ]    
+            [ <a href="Experience.html" style="color:black;">EXPERIENCE</a> ]
+            [ <a href="Education.html" style="color:black;">EDUCATION</a> ]        
+            [ <a href="family.html" style="color:black;">FAMILY</a> ]    
+            [ <a href="gallery.html" style="color:black;">GALLERY</a> ]
+            [ <a href="Playlist.html" style="color:black;">PLAYLIST</a> ] 
+        </font>
+        <br>
+        <big>================================================================================================================================</big>
+    </center>
+
+
+    <br>
+    <br>
+
+    <table border="0" width="90%" align="center">
+        <tr>
+            <td width="40%" align="center">
+                <img src="HTML/image html/ziraa pic.jpg" width="450" height="300" style="border: 10px double purple;">
+                <br>
+                <font size="8" face="Arial"><i>My Photos</i></font>
+            </td>
+
+            <td width="60%" valign="top">
+                <font size="5" face="Georgia" color="purple"><b>Hello, I'm Hazirah!</b></font>
+                <hr align="left" width="200">
+                
+                <font size="4">
+                     <br>
+        <font face="Verdana" size="3" color="grey">
+            <i>"Just like my name, I was born to stand out, not to fit in."</i>
+        </font>
+        <br>
+                    
+                    <h1 style="
+    font-family: 'Segoe UI', Arial, sans-serif; 
+    font-size: 45px; 
+    color: #8e44ad; 
+    text-shadow: 3px 3px 0px #ffffff, 6px 6px 0px rgba(142, 68, 173, 0.2); 
+    letter-spacing: 2px;
+    animation: floating 3s ease-in-out infinite;
+">
+    NUR HAZIRAH BINTI ARMAN
+                 2024902757 /
+                  JSI1105A
+</h1>
+
+<style>
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, -10px); }
+    100%   { transform: translate(0, 0px); }   
+}
+</style>
+
+<div style="margin-top: 20px; width: 100%; max-width: 450px;">
+    <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/1Vc0JvNmeVy7beR5s0Hvp6?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+</div>
+            </td>
+        </tr>
+    </table>
+
+    <br><br>
+    <p> 
+  <span id="datetime" style="font-weight: bold; color: purple;"></span>
+    </p>
+    </font>
+</center>
+
+   <div style="margin-top: 20px; text-align: center; border: 2px dashed purple; padding: 15px; border-radius: 15px; background-color: #8a678050;">
+    <h4 style="margin-bottom: 15px; color: purple; font-family: Arial, sans-serif;">Connect With Me</h4>
+    
+    <div style="margin-bottom: 10px;">
+        <img src="https://cdn-icons-png.flaticon.com/128/3955/3955024.png" width="20" style="vertical-align: middle; margin-right: 5px;">
+        <a href="https://www.instagram.com/zirhqq_?igsh=MTQwdnFoanp6NnpwcQ==" target="_blank" style="text-decoration: none; color: #e130c9; font-weight: bold;">Instagram</a>
+        <img src="https://cdn-icons-png.flaticon.com/128/3046/3046121.png" width="20" style="vertical-align: middle; margin-right: 5px;">
+        <a href="https://www.tiktok.com/@lemonsstea?is_from_webapp=1&sender_device=pc" target="_blank" style="text-decoration: none; color: #000000; font-weight: bold;">TikTok</a>
+        <img src="c:\Users\User\Downloads\snapchat.jpg" width="20" style="vertical-align: middle; margin-right: 5px;">
+        <a href="https://www.snapchat.com/add/nrhzirhcy?share_id=ZNhY2cwRROU&locale=en-GB" target="_blank" style="text-decoration: none; color: #b8ac00; font-weight: bold;">Snapchat</a>
+    </div>
+</div>
+
+
+    <hr>
+    <center>
+        <font face="Courier New" size="3" color="black">
+            <b>Statement of Responsibility:</b><br>
+            This website is developed by <b>NUR HAZIRAH BINTI ARMAN (2024902757)</b><br>
+            &copy; 2026 Personal Website Project | All Rights Reserved.
+        </font>
+    </center>
+    <br>
+
+  <script>
+    function updateDateTime() {
+        const now = new Date();
+        
+        // DATE
+        const dateOptions = { day: 'numeric', month: 'long', year: 'numeric' };
+        const dateString = now.toLocaleDateString('en-GB', dateOptions);
+        
+        // TIME
+        const timeString = now.toLocaleTimeString('en-GB', { hour12: false });
+        
+        // COMBINE AND APPEAR
+        document.getElementById('datetime').innerHTML = dateString + " | " + timeString;
+    }
+
+    // CALL EVERY SEC
+    setInterval(updateDateTime, 1000);
+    
+    // CALL WHEN LOAD PAGE
+    updateDateTime();
+</script>
+
+</body>
+</html>
+

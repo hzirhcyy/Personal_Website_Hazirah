@@ -1,0 +1,758 @@
+/* ==========================================
+   1. GLOBAL BODY & PAGE BACKGROUND
+   ========================================== */
+body {
+    background-color: #FADADD; /* Your main pastel pink background */
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+/* ==========================================
+   2. MAIN NAVIGATION LINKS
+   ========================================== */
+a {
+    text-decoration: none;
+    color: purple;
+    padding: 5px 10px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    transition: 0.3s;
+}
+
+a:hover {
+    background-color: #ce889f;
+    border-radius: 10px;
+    color: white; /* Changes text to white on hover as shown in the image */
+}
+
+/* Specific colors for your social media links */
+.insta-link { color: #e130c9 !important; }
+.tiktok-link { color: #000000 !important; }
+.snap-link { color: #b8ac00 !important; }
+
+/* ==========================================
+   3. IMAGES & HOVER EFFECTS
+   ========================================== */
+img {
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+    transition: transform .3s;
+    border: 5px solid #dcafaf; 
+}
+
+img:hover {
+    transform: scale(1.05); /* Smooth pop zoom when hovered */
+}
+
+/* Custom double purple border for your main photo collage */
+.profile-pic {
+    border: 10px double purple !important;
+}
+
+/* Align social media icons nicely with the link text */
+.social-icon {
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+/* ==========================================
+   4. FLOATING NAME HEADER (H1 ANIMATION)
+   ========================================== */
+.floating-name {
+    font-family: 'Segoe UI', Arial, sans-serif; 
+    font-size: 45px; 
+    color: #8e44ad; 
+    text-shadow: 3px 3px 0px #ffffff, 6px 6px 0px rgba(142, 68, 173, 0.2); 
+    letter-spacing: 2px;
+    animation: floating 3s ease-in-out infinite;
+}
+
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, -10px); }
+    100%   { transform: translate(0, 0px); }   
+}
+
+/* ==========================================
+   5. WIDGETS & EMBEDS (SPOTIFY & SOCIAL BOX)
+   ========================================== */
+.spotify-container {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 450px;
+}
+
+.spotify-iframe {
+    border-radius: 12px;
+}
+
+/* Dashed border container box for social media links */
+.social-media-box {
+    margin-top: 20px;
+    text-align: center;
+    border: 2px dashed purple;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: rgba(138, 103, 128, 0.31); /* Semi-transparent background */
+}
+
+.social-media-box h4 {
+    margin-bottom: 15px;
+    color: purple;
+    font-family: Arial, sans-serif;
+}
+
+.social-links-wrapper {
+    margin-bottom: 10px;
+}
+
+/* ABOUT ME PAGE
+/* ==========================================================================
+   GLOBAL STYLES & BACKGROUND
+   ========================================================================== */
+body {
+    background-color: #FADADD; /* Soft pastel pink background */
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* MAIN CONTAINER */
+ .page-container {
+            width: 95%;
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+        }
+
+              .image-banner {
+            width: 500px;
+            height: 280px;
+            object-fit: cover;
+            border-radius: 10px;
+            border: 5px solid purple;
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+            display: block;
+            margin: 0 auto;
+        }
+/* ==========================================================================
+   NAVIGATION (LINKS)
+   ========================================================================== */
+a { 
+    text-decoration: none; 
+    color: purple; 
+    padding: 5px 10px; 
+    font-weight: bold; 
+    font-family: Arial; 
+}
+
+a:hover { 
+    background-color: #ce889f; 
+    border-radius: 10px; 
+    color: white; 
+}
+
+/* Song title below the video banner */
+.song-title a {
+    color: purple;
+    font-weight: bold;
+}
+
+/* ==========================================================================
+   MEDIA ELEMENTS (VIDEO BANNER)
+   ========================================================================== */
+.image-banner {
+    width: 500px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 5px solid purple;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    display: block;
+    margin: 0 auto;
+}
+
+/* ==========================================================================
+   INTRODUCTION BOX (WHO AM I?)
+   ========================================================================== */
+.description-box {
+    width: 100%;
+    padding: 25px;
+    background-color: #FFF0F5; /* Pastel pink */
+    border-radius: 15px;
+    border-left: 10px solid purple;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.05);
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/* ==========================================================================
+   GRID & BIODATA CARD STRUCTURE
+   ========================================================================== */
+.info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Splits into two columns side-by-side */
+    gap: 15px;
+    width: 100%;
+}
+
+.card {
+    padding: 20px;
+    border-radius: 15px;
+    background-color: white;
+    border: 2px solid rgba(0,0,0,0.05);
+    box-shadow: 5px 5px 15px rgba(142, 68, 173, 0.05);
+    transition: 0.3s;
+    box-sizing: border-box;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: purple;
+}
+
+/* Title Labels Inside Cards */
+.card-label {
+    font-size: 15px;
+    font-weight: 800;
+    color: #5D3FD3; /* Iris Purple Color */
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 8px;
+    letter-spacing: 1px;
+}
+
+/* Value/Text Content Inside Cards */
+.card-value {
+    font-size: 18px;
+    color: #4a148c;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+/* Side Borders for Pastel Colored Cards */
+.pink-card { border-left: 6px solid #FFB6C1; }
+.purple-card { border-left: 6px solid #CE93D8; }
+
+.full-width { grid-column: span 2; }
+
+/* ==========================================================================
+   SPECIAL ELEMENTS (LISTS & SKILLS TABLE)
+   ========================================================================== */
+/* Daily Reminder List */
+.reminder-list {
+    text-align: left;
+    display: inline-block;
+    margin: 0 auto;
+    color: #4a148c;
+    font-weight: 600;
+}
+
+.reminder-list li {
+    margin-bottom: 10px;
+}
+
+/* Extra Styling for the Skills Table */
+.card table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    margin-top: 10px;
+    border: 1px solid #CE93D8;
+}
+
+.card th {
+    background-color: #E1BEE7;
+    color: #4a148c;
+    padding: 8px;
+}
+
+.card td {
+    padding: 8px;
+    border: 1px solid #CE93D8;
+    color: #4a148c;
+    font-weight: 600;
+}
+
+/*EXPERIENCE PAGE
+/* ==========================================================================
+   GLOBAL STYLES & BACKGROUND
+   ========================================================================= */
+body {
+    background-color: #FADADD; /* Soft pastel pink background */
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* MAIN CONTAINERS */
+
+ .page-container {
+            width: 100%;
+            max-width: 10px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+        }
+
+/* ==========================================================================
+   NAVIGATION (LINKS)
+   ========================================================================= */
+a { 
+    text-decoration: none; 
+    color: purple; 
+    padding: 5px 10px; 
+    font-weight: bold; 
+    font-family: Arial; 
+}
+
+a:hover { 
+    background-color: #ce889f; 
+    border-radius: 10px; 
+    color: white; 
+}
+
+/* ==========================================================================
+   MEDIA ELEMENTS (BANNER IMAGE)
+   ========================================================================= */
+.image-banner {
+    width: 100%;
+    max-height: 420px;
+    object-fit: cover;
+    border-radius: 40px;
+    border: 5px solid purple;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* ==========================================================================
+   INTRODUCTION BOX
+   ========================================================================= */
+.description-box {
+    width: 100%;
+    padding: 25px;
+    background-color: #FFF0F5; /* Light pink pastel background */
+    border-radius: 15px;
+    border-left: 10px solid purple;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.05);
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/* ==========================================================================
+   GRID & CARD ARCHITECTURE
+   ========================================================================= */
+.info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 15px;
+    width: 100%;
+}
+
+.card {
+    padding: 20px;
+    border-radius: 15px;
+    background-color: white;
+    border: 2px solid rgba(0,0,0,0.05);
+    box-shadow: 5px 5px 15px rgba(142, 68, 173, 0.05);
+    transition: 0.3s;
+    box-sizing: border-box;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: purple;
+}
+
+/* Labels Inside Cards */
+.card-label {
+    font-size: 15px;
+    font-weight: 800;
+    color: #5D3FD3; /* Iris Purple Color */
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 8px;
+    letter-spacing: 1px;
+}
+
+/* Base Text Values Inside Cards */
+.card-value {
+    font-size: 18px;
+    color: #4a148c;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+/* Colored Accent Borders */
+.pink-card { border-left: 6px solid #FFB6C1; }
+.purple-card { border-left: 6px solid #CE93D8; }
+
+.full-width { grid-column: span 2; }
+
+/* ==========================================================================
+   LISTS & TABLES EXTRA SETTINGS
+   ========================================================================= */
+/* Personal Values List Positioning */
+.value-list {
+    text-align: left;
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.value-list li {
+    margin-bottom: 10px;
+}
+
+/* Global Table Properties to Sync table cards */
+.info-grid table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    background-color: #FFF0F5;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.info-grid th {
+    background-color: #D8BFD8;
+    color: #4A148C;
+    padding: 12px;
+    border: 1px solid #CE93D8;
+}
+
+.info-grid td {
+    padding: 12px;
+    border: 1px solid #E1BEE7;
+    color: #4A148C;
+    font-weight: 600;
+}
+
+
+/*EDUCATION PAGE
+/* ==========================================================================
+   GLOBAL STYLES & BACKGROUND
+   ========================================================================== */
+body {
+    background-color: #FADADD; /* Soft pastel pink background */
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* MAIN CONTAINER ARCHITECTURE */
+.page-container {
+    width: 95%;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+/* ==========================================================================
+   NAVIGATION LINKS
+   ========================================================================== */
+a { 
+    text-decoration: none; 
+    color: purple; 
+    padding: 5px 10px; 
+    font-weight: bold; 
+    font-family: Arial, sans-serif; 
+}
+
+a:hover { 
+    background-color: #ce88ba; 
+    border-radius: 10px; 
+    color: white; 
+}
+
+/* ==========================================================================
+   MAIN CONTENT CONTAINER (THE BIG WHITE BOX)
+   ========================================================================== */
+.main-content-box {
+    width: 100%;
+    padding: 30px;
+    background-color: white; 
+    border-radius: 20px; /* Bucu melengkung untuk kotak putih besar */
+    box-shadow: 0px 10px 20px rgba(142, 68, 173, 0.05); /* Shadow lembut */
+    box-sizing: border-box;
+}
+
+/* SECTION HEADINGS */
+.section-title {
+    font-size: 28px;
+    color: purple;
+    font-family: 'Georgia', serif;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #FADADD;
+    padding-bottom: 10px;
+}
+
+/* ==========================================================================
+   EDUCATION ROWS (MELINTANG PANJANG MACAM IMAGE_DC9D49.JPG)
+   ========================================================================== */
+.education-row {
+    display: flex; /* Mengekalkan susunan melintang (gambar kiri, teks kanan) */
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 20px; /* Bucu kad melengkung bujur lembut */
+    box-shadow: 0px 8px 20px rgba(142, 68, 173, 0.06); /* Shadow aesthetic pada setiap baris */
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    box-sizing: border-box;
+}
+
+/* Border tebal di sebelah kiri yang berselang-seli warna secara automatik */
+.education-row:nth-child(odd) {
+    border-left: 10px solid #FFC0CB; /* Border tebal warna Pink Pastel */
+}
+
+.education-row:nth-child(even) {
+    border-left: 10px solid #CE93D8; /* Border tebal warna Purple/Lavender Pastel */
+}
+
+/* Efek bila anda gerakkan tetikus (hover) di atas kad */
+.education-row:hover {
+    background-color: #FFF0F5; /* Bertukar warna pink lembut sikit */
+    transform: translateX(5px); /* Bergerak ke kanan sedikit secara lembut */
+}
+
+/* ==========================================================================
+   INNER IMAGES & TEXT DETAILS
+   ========================================================================== */
+.school-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 15px; /* Bucu gambar sekolah melengkung comel */
+    border: 3px solid purple; /* Border ungu sekeliling gambar */
+    background-color: #f0f0f0;
+}
+
+.education-details {
+    flex: 1;
+}
+
+.school-name {
+    font-size: 22px;
+    color: #4a148c; /* Warna ungu gelap pekat untuk nama sekolah */
+    font-weight: 700;
+    margin: 0 0 8px 0;
+}
+
+.education-desc {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    margin: 0 0 10px 0;
+}
+
+.duration-tag {
+    font-size: 14px;
+    color: #ce889f;
+    font-weight: bold;
+}
+
+/* FAMILY PAGE
+/* ==========================================================================
+   SPECIAL FAMILY STYLES (WON'T AFFECT OTHER PAGES)
+   ========================================================================== */
+
+/* Restricts the main layout wrapper for the family layout */
+.page-container {
+    width: 95%;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+/* Beautiful solid border for the main family top banner */
+.page-container .image-banner {
+    width: 100% !important;
+    max-height: 400px !important;
+    object-fit: cover !important;
+    border-radius: 20px !important;
+    border: 5px solid purple !important;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* The top description support box style */
+.page-container .description-box {
+    width: 100% !important;
+    padding: 25px !important;
+    background-color: #FFF0F5 !important;
+    border-radius: 15px !important;
+    border-left: 10px solid purple !important;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.05) !important;
+    text-align: center !important;
+    box-sizing: border-box !important;
+}
+
+/* Hardlocks the 2-column layout grid specifically for the family members */
+.page-container .info-grid {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important; /* Forces 2 columns side-by-side */
+    gap: 20px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+}
+
+/* Individual family member card designs */
+.info-grid .card {
+    padding: 20px !important;
+    border-radius: 15px !important;
+    background-color: white !important;
+    border: 2px solid rgba(0,0,0,0.05) !important;
+    box-shadow: 0px 8px 20px rgba(142, 68, 173, 0.05) !important;
+    transition: transform 0.3s ease, border-color 0.3s ease !important;
+    text-align: center !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    box-sizing: border-box !important;
+    width: 100% !important;
+}
+
+/* Uplifting hover animation trick for cards */
+.info-grid .card:hover {
+    transform: translateY(-5px) !important;
+    border-color: purple !important;
+}
+
+/* Forces images into uniform shape and prevents size spilling */
+.info-grid .card .member-img {
+    width: 100% !important; 
+    max-width: 300px !important; /* Keeps sizing identical to inline HTML definitions */
+    height: 300px !important; 
+    border-radius: 15px !important; 
+    object-fit: cover !important; 
+    margin-bottom: 15px !important;
+    border: 3px solid #f0f0f0 !important;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.05) !important;
+}
+
+/* Text styles inside the cards */
+.info-grid .card .card-label {
+    font-size: 15px !important;
+    font-weight: 800 !important;
+    color: #5D3FD3 !important;
+    text-transform: uppercase !important;
+    display: block !important;
+    margin-bottom: 8px !important;
+    letter-spacing: 1px !important;
+}
+
+.info-grid .card .card-value {
+    font-size: 18px !important;
+    color: #4a148c !important;
+    font-weight: 600 !important;
+    line-height: 1.5 !important;
+}
+
+/* Distinct left colorful stripes for custom card classifications */
+.info-grid .pink-card { border-left: 6px solid #FFB6C1 !important; }
+.info-grid .purple-card { border-left: 6px solid #CE93D8 !important; }
+.info-grid .blue-card { border-left: 6px solid #90CAF9 !important; }
+.info-grid .green-card { border-left: 6px solid #A5D6A7 !important; }
+
+/* Forces the center niece card to span completely across both columns cleanly */
+.info-grid .full-width { 
+    grid-column: span 2 !important; 
+}
+
+.info-grid .full-width .member-img {
+    max-width: 400px !important;
+    height: 300px !important;
+}
+
+/* GALLERY
+
+/* ==========================================================================
+   SPECIAL GALLERY STYLES (EXACTLY LIKE THE IMAGES - WON'T AFFECT OTHER PAGES)
+   ========================================================================== */
+
+/* Main layout wrapper container for the gallery section */
+.page-container {
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+/* Beautiful responsive photo grid exactly matching your images */
+.page-container .gallery-grid {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)) !important; /* Dynamically creates perfectly proportioned rows */
+    gap: 20px !important;
+    width: 100% !important;
+    margin-bottom: 50px !important;
+    box-sizing: border-box !important;
+}
+
+/* Individual picture box styling with precise boundaries and shadows */
+.gallery-grid .gallery-item {
+    position: relative !important;
+    overflow: hidden !important;
+    border-radius: 15px !important; /* Smooth rounded photo frame corners */
+    border: 5px solid white !important; /* Thick white photo border frame */
+    box-shadow: 0px 8px 15px rgba(0,0,0,0.1) !important; /* Subtle soft frame shadow */
+    height: 300px !important; /* Fixed picture container layout height */
+    background-color: #fce4ec !important;
+    transition: transform 0.3s ease, border-color 0.3s ease !important;
+    box-sizing: border-box !important;
+}
+
+/* Hardlocks the image dimensions inside the thumbnail container */
+.gallery-grid .gallery-item img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important; /* Prevents images from stretching out of shape */
+    transition: transform 0.5s ease !important; /* Smooth hover zoom effect */
+}
+
+/* Slight scale up lift when hovering over a photo frame */
+.gallery-grid .gallery-item:hover {
+    transform: scale(1.02) !important;
+    border-color: #e1bee7 !important; /* Soft purple hue change on hover frame edge */
+}
+
+/* Slight image zoom scaling action inside the frame when hovered */
+.gallery-grid .gallery-item:hover img {
+    transform: scale(1.1) !important;
+}
+
+/* Purple overlay text caption hidden at the bottom of the card frame */
+.gallery-grid .gallery-item .img-caption {
+    position: absolute !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    background: rgba(74, 20, 140, 0.8) !important; /* Semitransparent purple overlay stripe */
+    color: white !important;
+    padding: 10px !important;
+    font-size: 14px !important;
+    text-align: center !important;
+    font-family: Arial, sans-serif !important;
+    opacity: 0 !important; /* Kept completely invisible by default */
+    transition: opacity 0.3s ease !important;
+    box-sizing: border-box !important;
+}
+
+/* Fades the purple "Memory" overlay text directly into view upon hovering */
+.gallery-grid .gallery-item:hover .img-caption {
+    opacity: 1 !important;
+}
